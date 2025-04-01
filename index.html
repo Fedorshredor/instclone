@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Stories Stats</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Chart.js для графиков -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="insights-container">
+    <!-- Шапка -->
+    <header>
+      <button class="back-btn">←</button>
+      <h1>Статистика историй</h1>
+    </header>
+
+    <!-- Переключение между историями -->
+    <div class="story-selector">
+      <img src="assets/story-preview1.jpg" class="active">
+      <img src="assets/story-preview2.jpg">
+    </div>
+
+    <!-- Основные метрики -->
+    <div class="metrics">
+      <div class="metric-card">
+        <h3>Показы</h3>
+        <p>1,234</p>
+      </div>
+      <div class="metric-card">
+        <h3>Охват</h3>
+        <p>789</p>
+      </div>
+    </div>
+
+    <!-- График просмотров -->
+    <div class="chart-container">
+      <canvas id="viewsChart"></canvas>
+    </div>
+
+    <!-- Список зрителей -->
+    <div class="viewers-list">
+      <h2>Зрители</h2>
+      <div class="viewer">
+        <img src="assets/user-avatar1.jpg" class="avatar">
+        <div class="viewer-info">
+          <span class="name">username1</span>
+          <span class="time">2 ч назад</span>
+        </div>
+      </div>
+      <div class="viewer">
+        <img src="assets/user-avatar2.jpg" class="avatar">
+        <div class="viewer-info">
+          <span class="name">username2</span>
+          <span class="time">1 ч назад</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
